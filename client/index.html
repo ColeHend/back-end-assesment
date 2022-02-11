@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Back End Assessment</title>
+  </head>
+  <body class="container">
+    <div class="buttons">
+      <button id="complimentButton">Get a compliment</button>
+      <button id="fortuneButton">Get your fortune!</button>
+    </div>
+
+    <div id="listWrap">
+      <!-- the shopping list -->
+      <ul id="shoppingList"></ul>
+      <!-- add to list -->
+      <div class="addList">
+        <input id="addInput" type="text" placeholder="text to add to list.." />
+        <button id="addListBtn">Add</button>
+      </div>
+      <!-- remove from list -->
+      <div class="removeList">
+        <input id="removeInput" type="text" placeholder="number to remove.." />
+        <button id="removeListBtn">Remove</button>
+      </div>
+      <!-- Edit list -->
+      <div class="editList">
+        <input id="editNumInput" type="text" placeholder="number to edit.." />
+        <input
+          id="editTxtInput"
+          type="text"
+          placeholder="text to change to..."
+        />
+        <button id="editListBtn">Edit</button>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

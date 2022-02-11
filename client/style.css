@@ -1,0 +1,29 @@
+.listWrap{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    align-self: center;
+    
+}
+.addList{
+    position: relative;
+    width: 30%;
+}
+.removeList{
+    display: flex;
+    width: 30%;
+}
+.editList{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    border: 1px solid #000;
+    
+}
+div {
+    margin: 15px;
+}
+ul {
+    list-style-type: none;
+}
