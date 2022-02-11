@@ -50,13 +50,14 @@ module.exports = {
     res.status(200).send(itemListTotal);
   },
   updateList: (req, res) => {
-      let {id} = req.params;
-      let {text} = req.body;
-      for (let i = 0; i < itemListTotal.length; i++) {
-        if (itemListTotal[i].id === +id) {
-            itemListTotal[i].text = text;
-        }
+    let {id} = req.params;
+    let {text} = req.body;
+    console.log("text",req);
+    for (let i = 0; i < itemListTotal.length; i++) {
+      if (itemListTotal[i].id === +id) {
+        itemListTotal[i].text = text;
       }
-      res.status(200).send(itemListTotal)
+    }
+    res.status(200).send(itemListTotal);
   },
 };
