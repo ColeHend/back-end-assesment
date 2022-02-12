@@ -1,6 +1,9 @@
 const itemListTotal = [];
 let idList = 1;
 module.exports = {
+  getList: (req,res)=>{
+    res.status(200).send(itemListTotal)
+  },
   getCompliment: (req, res) => {
     const compliments = [
       "Gee, you're a smart cookie!",
